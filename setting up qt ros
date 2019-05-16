@@ -1,0 +1,13 @@
+sudo apt-get install ros-hydro-qt-create
+sudo apt-get install ros-indigo-qt-build
+$ source /opt/ros/kinetic/setup.bash
+$ mkdir -p ~/catkin_ws/src
+http://wiki.ros.org/qt_create/Tutorials/Qt%20App%20Templates
+cd /path/to/my/workspace/src
+> catkin_create_qt_pkg qdude
+cd /path/to/my/workspace
+> catkin_make --force-cmake
+source ~/catkin_ws/devel/setup.bash
+rosrun qtest qtest
+
+https://github.com/xpharry/ros-qt-gui/blob/master/developping_log.md
